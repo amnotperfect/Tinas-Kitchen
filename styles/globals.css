@@ -13,4 +13,13 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
