@@ -31,16 +31,40 @@
 .contactUsPage > section {
   width: 100%;
   height: 45vh;
-  background: linear-gradient( to bottom right,whitesmoke, whitesmoke,rosybrown);
+  background: linear-gradient(
+    to bottom right,
+    whitesmoke,
+    whitesmoke,
+    rosybrown
+  );
 }
 
 .contactUsPage > section > ul {
   width: 50%;
   height: 100%;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: column;
+  align-items: flex-start;
+  
 }
 
 .contactUsPage > section > ul > li {
   list-style-type: none;
   margin: 10px 15px;
+}
+
+@media (max-width: 600px) {
+  .contactUsPage > main {
+    flex-wrap: wrap;
+  }
+  .contactUsPage > main > div {
+    flex: 0 0 40%;
+    height: 45%;
+  }
+
+  .contactUsPage > section > ul {
+    width: 100%;
+  }
 }

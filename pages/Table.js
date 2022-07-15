@@ -37,7 +37,7 @@ const Table = () => {
       <ul>
         {items.map((item) => {
           return (
-            <li>
+            <li key={Math.random()}>
               <p>{item.name}</p>
               <span>{item.price}</span>
             </li>
