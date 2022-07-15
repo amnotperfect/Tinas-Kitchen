@@ -68,6 +68,28 @@
   object-fit: cover;
 }
 
+.contactUsDiv {
+  width: 100%;
+  height: 100px;
+  background: "";
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.contactUsDiv > button {
+  width: 200px;
+  height: 50px;
+  background: firebrick;
+  color: white;
+  margin-left: 50px;
+}
+
+.contactUsDiv > button:hover {
+  color: lavender;
+}
+
 .explore {
   height: 70vh;
   width: 100%;
@@ -135,8 +157,8 @@
 }
 
 .displaySection > section {
-  flex: 0 0 47%;
-  height: 100%;
+  flex: 0 0 45%;
+  height: 85%;
   background-color: "";
   position: relative;
 }
@@ -168,8 +190,7 @@
 
 .displaySection > section:nth-child(2) > div:nth-child(1) > h1 {
   font-size: 35px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .displaySection > section:nth-child(2) > div:nth-child(2) {
@@ -206,6 +227,7 @@
 @media (max-width: 600px) {
   .introText {
     flex-direction: column;
+    width: 98%;
   }
   .introText > main {
     flex: 0 0 50%;
@@ -217,12 +239,16 @@
   .displaySection > section {
     width: 100%;
   }
-  .imageDiv{
+  .imageDiv {
     overflow-x: scroll;
     overflow-y: hidden;
     justify-content: flex-start;
   }
-  .imageCont{
+  .imageCont {
     flex: 0 0 250px;
+  }
+
+  .contactUsDiv > button {
+    margin-left: 10px;
   }
 }

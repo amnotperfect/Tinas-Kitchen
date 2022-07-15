@@ -1,0 +1,50 @@
+.table {
+  width: 100%;
+  min-height: 100vh;
+  max-height: auto;
+  background: "";
+}
+
+.table > header {
+  width: 100%;
+  height: 15vh;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.table>header>h1{
+    color: firebrick;
+}
+
+.table > ul {
+  width:100%;
+  margin: 0px auto;
+  min-height: 100vh;
+  max-height: auto;
+  background: "";
+}
+
+.table > ul > li {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: whitesmoke;
+}
+
+.table > ul > li > p {
+  flex: 0 0 50%;
+  padding-left: 15px;
+  font-weight: 500;
+}
+.table > ul > li > span {
+  flex: 0 0 50%;
+  font-weight: 500;
+}
+
+.table > ul > li:nth-child(even) {
+  background-color: honeydew;
+}

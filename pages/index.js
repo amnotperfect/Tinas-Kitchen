@@ -2,13 +2,19 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import Explore from "../components/Explore";
+import Footer from "../components/Footer";
+import Link from "next/link";
 
 function HomeHeader() {
   return (
     <nav className={styles.nav}>
       <li>Home</li>
-      <li>Table</li>
-      <li>About Us</li>
+      <li>
+        <Link href="/Table">Table</Link>
+      </li>
+      <li>
+        <Link href="/ContactUs">Contact Us</Link>
+      </li>
     </nav>
   );
 }
@@ -65,13 +71,25 @@ function WelcomePage() {
   );
 }
 
+function ContactUsDiv() {
+  return (
+    <div className={styles.contactUsDiv}>
+      <button>
+        <Link href="/ContactUs">Contact Us</Link>
+      </button>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <div>
       <HomeHeader />
       <WelcomePage />
+      <ContactUsDiv />
       <Explore />
       <DisplaySection />
+      <Footer />
     </div>
   );
 }
