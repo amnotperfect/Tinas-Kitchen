@@ -24,14 +24,21 @@ function IntroText() {
     <div className={styles.introText}>
       <main>
         <h1>Tinas Kitchen</h1>
-        <h1>Dishes just for You</h1>
+        <p>
+          Welcome to tinas kitchen we hope to serve <br />
+          you with the best of dishes
+        </p>
+
+        <button>
+          <Link href="/ContactUs">Contact Us</Link>
+        </button>
       </main>
       <main>
         <Image
           layout="fill"
           objectFit="cover"
           alt="image"
-          src={require("../images/2.jpg")}
+          src={require("../images/4.jpg")}
         />
       </main>
     </div>
@@ -86,7 +93,6 @@ export default function Home() {
     <div>
       <HomeHeader />
       <WelcomePage />
-      <ContactUsDiv />
       <Explore />
       <DisplaySection />
       <Footer />

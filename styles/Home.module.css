@@ -9,7 +9,7 @@
 
 .nav {
   width: 100%;
-  height: 7vh;
+  height: 10vh;
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -18,8 +18,9 @@
 }
 
 .nav > li {
-  margin: 30px;
+  margin-left: 15px;
   list-style-type: none;
+  color: brown;
 }
 
 .nav > li:hover {
@@ -29,7 +30,7 @@
 .introText {
   width: 90%;
   height: 90%;
-  border: 1px solid whitesmoke;
+  border: 0px solid whitesmoke;
   border-radius: 10px;
   background: white;
   display: flex;
@@ -39,7 +40,7 @@
 }
 
 .introText > main {
-  flex: 0 0 47%;
+  flex: 0 0 40%;
   height: 100%;
   margin: 0px 5px;
   background-color: transparent;
@@ -53,7 +54,17 @@
 .introText > main:nth-child(1) > h1 {
   padding: 0px 10px;
   font-size: 50px;
-  color: firebrick;
+  color: brown;
+  margin-bottom: 10px;
+}
+
+.introText > main:nth-child(1) > button {
+  width: 150px;
+  height: 35px;
+  background: firebrick;
+  color: white;
+  margin-left: 19px;
+  margin-top: 15px;
 }
 
 .introText > main:nth-child(1) > p {
@@ -62,8 +73,8 @@
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-.introText > main:nth-child(2) > img {
-  height: 100%;
+.introText > main:nth-child(2) {
+  height: 90%;
   width: 100%;
   object-fit: cover;
 }
@@ -157,7 +168,7 @@
 }
 
 .displaySection > section {
-  flex: 0 0 45%;
+  flex: 0 0 47%;
   height: 85%;
   background-color: "";
   position: relative;
@@ -165,6 +176,7 @@
 
 .displaySection > section:nth-child(1) {
   position: relative;
+ 
 }
 
 .displaySection > section:nth-child(2) {
@@ -233,11 +245,20 @@
     flex: 0 0 50%;
     width: 98%;
   }
+
+  .introText > main:nth-child(1) {
+    align-items: center;
+  }
+
+  .introText > main:nth-child(1) > button {
+    margin: 15px 0px;
+  }
+
   .displaySection {
     flex-direction: column;
   }
   .displaySection > section {
-    width: 100%;
+    width: 97%;
   }
   .imageDiv {
     overflow-x: scroll;
